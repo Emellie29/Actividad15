@@ -13,10 +13,16 @@ while True:
             cantidad = int(input("\nIngrese la cantidad de pacientes: "))
             for i in range(cantidad):
                 print(f"\nEstudiante No.{i + 1}")
-                carnet = int(input("Ingrese codigo de paciente: "))
+                codigo = int(input("Ingrese codigo de paciente: "))
                 nombre = input("Ingrese el nombre completo del paciente: ")
                 edad=input("Ingrese la edad del paciente (18 años): ")
-                registro[carnet]={
+                registro[codigo]={
                     "nombre":nombre,
                     "edad":edad
                 }
+        case "2":
+            print("Mostrar pacientes")
+            if not registro:
+                print("No se ha podido registrar pacientes")
+            else:
+                for codigo
